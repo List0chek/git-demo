@@ -8,7 +8,7 @@ def format_report(average_waits: dict[str, float]) -> str:
     Returns:
         A header line followed by one line per station.
     """
-    lines = ["Average wait per station"]
+    lines = [f"Average wait per station ({len(average_waits)} stations)"]
     for station, minutes in average_waits.items():
         lines.append(f"{station}: {minutes:.1f} min")
     return "\n".join(lines)
