@@ -1,5 +1,6 @@
 def format_report(average_waits: dict[str, float]) -> str:
     """
+    ...
     Format average waits as a plain-text report.
 
     Args:
